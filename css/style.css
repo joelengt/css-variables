@@ -1,0 +1,58 @@
+/*Soportado actualmente solo por Chrome y mozilla Firefox*/
+/* Las varaibles son declaradas a nivel de bloque,  estas se pueden usar heredadsa a los hijos dentro del bloque*/
+
+/*  h1 {  
+   --myColor: red;
+   color: var(--myColor);
+}
+
+h2 {  
+   --myColor: blue;
+   color: var(--myColor);
+}
+ */
+
+
+/* En eqtiquedas padre e hijos se hereda el valor */
+/* Todos los hijos heredan la variable */
+
+
+/* .padre {
+   --myColor: blue;
+}
+
+.hijo {
+   background: var(--myColor);
+} 
+ */
+
+
+/*y Como es un lio tener vatiables regadas, para usarlas en nuestro gusto lo ponemos en la raiz
+, en el root, en el html
+
+
+/*Ahora todos los hijos pueden usar las variables*/
+
+html{
+   --myColor: blue;
+   --myColorRed: red;
+   --Fontletter: 1.6em;
+   --FontFamily : 'Arial', sans-serif; 
+}
+
+h1 {  
+   color: var(--myColor);
+   font-size: var(--Fontletter);
+   font-family: var(--FontFamily);
+}
+
+h2 {  
+   color: var(--myColorRed);
+   font-size: var(--Fontletter);
+   border-left: 6px solid black;
+   background: lightgray;
+   display: block;
+   width: 400px;
+   padding: 1em;
+   padding-left: .5em;
+}
